@@ -40,7 +40,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      'http://localhost:3000',  // for local development
+      'http://localhost:3000',  
     // 'https://your-app-name.vercel.app',  // for production
     // 'https://your-custom-domain.com'
     ],
