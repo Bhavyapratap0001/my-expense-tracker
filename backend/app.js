@@ -41,7 +41,7 @@ app.use(
   cors({
     origin: [
       'http://localhost:3000',  
-    // 'https://your-app-name.vercel.app',  // for production
+    // 'https://your-app-name.vercel.app', 
     // 'https://your-custom-domain.com'
     ],
     credentials: true,
