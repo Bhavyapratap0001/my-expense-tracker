@@ -152,10 +152,9 @@ create config folder and add config.env file in it and all all env variables the
 GitHub : https://github.com/Bhavyapratap0001
 
 
+## Contact
 
-## Demo
-
-Insert gif or link to demo
+For any inquiries, feel free to contact me at bhavyapratap0707@gmail.com
 
 
 
