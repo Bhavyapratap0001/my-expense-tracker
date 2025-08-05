@@ -78,13 +78,13 @@ Support attaching receipts or other relevant documents to expense entries.
 Clone the project
 
 ```bash
-  git clone 
+  git clone https://github.com/Bhavyapratap0001/my-expense-tracker.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd Expense-Tracker-App
+  cd my-expense-tracker
 ```
 
 Go to the frontend directory and Install dependencies
@@ -140,15 +140,25 @@ create config folder and add config.env file in it and all all env variables the
 
 ## Screenshots
 
+![alt text](<EMS 1.PNG>)
+
+![alt text](<EMS 2.PNG>)
+
+![alt text](<EMS 3.PNG>)
+
+![alt text](<EMS 4.PNG>)
+
 
 ## 🔗 Links
+
+GitHub : https://github.com/Bhavyapratap0001
+
+
 
 ## Demo
 
 Insert gif or link to demo
 
 
-## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
 
