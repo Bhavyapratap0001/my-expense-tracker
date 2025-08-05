@@ -8,13 +8,26 @@ import morgan from "morgan";
 import transactionRoutes from "./Routers/Transactions.js";
 import userRoutes from "./Routers/userRouter.js";
 import path from "path";
+import mongoose from "mongoose";
 
 dotenv.config({ path: "./config/config.env" });
 const app = express();
 
-const port = process.env.PORT;
+const port = process.env.PORT || 5005;
+const MONGO_URL = process.env.MONGO_URL;
 
 connectDB();
+
+
+
+
+mongoose.connect(process.env.MONGO_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log('Database connected successfully'))
+.catch(err => console.log('Database connection error:', err));
+
 
 const allowedOrigins = [
   "https://main.d1sj7cd70hlter.amplifyapp.com",
@@ -26,7 +39,11 @@ const allowedOrigins = [
 app.use(express.json());
 app.use(
   cors({
-    origin: allowedOrigins,
+    origin: [
+      'http://localhost:3000',  // for local development
+    // 'https://your-app-name.vercel.app',  // for production
+    // 'https://your-custom-domain.com'
+    ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
@@ -48,3 +65,5 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Server is listening on http://localhost:${port}`);
 });
+
+
